@@ -1,0 +1,117 @@
+@import "fonts"
+
+//----------------------fonts---------------------
+$fonts: 'Nunito', sans-serif
+$fonts--title: 'Oswald', sans-serif
+//---------------------end-fonts---------------------
+
+//----------------------color---------------------
+$accent: #017fc6
+$text: #212121
+$btn: #fee254
+$white: #f2f6fa
+
+//---------------------end-color---------------------
+
+body
+	overflow-x: hidden
+	position: relative
+	min-width: 320px
+	font-family: $fonts
+	font-size: 16px
+	color: $text
+	line-height: 1.5
+	font-weight: 400
+
+::selection
+	background-color: $accent
+	color: #fff
+
+section
+	position: relative
+	
+a, div, ul, li, input, textarea
+	&:hover,
+	&:focus
+		outline: none
+
+h1, h2, h3, h4, h5, h6
+	font-weight: 700
+	line-height: 1.2
+	margin: 0
+	padding: 0
+	font-family: $fonts--title
+
+h2
+	font-size: 36px
+	text-align: center
+	margin-bottom: 50px
+	font-weight: 400
+	line-height: 1.4
+
+a
+	color: $text
+	transition: all .6s
+
+	&:hover,
+	&:focus
+		color: $text
+
+svg
+	transition: all .6s
+
+g, path
+	opacity: 1
+	fill: #fff
+	transition: all .6s
+
+ul
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+sub, sup
+	font-size: 60%
+
+
+b, strong
+	font-weight: 700
+
+p
+	margin: 0
+	padding: 0
+
+a,
+a:focus,
+a:hover
+	outline: none
+	text-decoration: none
+	transition: all .6s
+
+button,
+button:focus,
+button:hover
+	outline: none
+	text-decoration: none
+	transition: all .6s
+	cursor: pointer
+	
+
+.no-scroll
+	overflow: hidden
+
+
+.container
+	position: relative
+	max-width: 1200px
+	width: 100%
+	margin: 0 auto
+	padding: 0 15px
+
+.main
+	overflow: hidden
+
+
+@import "_base/btn"
+@import "_base/form"
+@import "_base/hamburger"

@@ -1,0 +1,87 @@
+label.error
+	position: absolute
+	bottom: -25px
+	right: 25px
+	left: 25px
+	transition: all .3s
+	animation: error .3s linear 1 forwards
+	color: #fff
+	text-align: center
+	font-weight: 600
+	background-color: red
+	border-radius: 10px
+	font-size: 14px
+	z-index: 1
+
+	&::before
+		content: ''
+		position: absolute
+		left: 50%
+		top: -8px
+		transform: translate(-50%, 0)
+		border-bottom: 4px solid red
+		border-left: 4px solid transparent
+		border-right: 4px solid transparent
+		border-top: 4px solid transparent
+
+input, textarea
+	border: none
+	border-bottom: 1px solid #fff
+	outline: none
+	box-shadow: none
+	-webkit-appearance: none
+	background-color: transparent
+	color: rgba($text, .3)
+	width: 100%
+	transition: all .6s
+	
+	&:focus:required:invalid
+		border-color: $accent
+		outline: none
+		box-shadow: none
+		-webkit-appearance: none
+
+	&:required:valid
+		border-color: green
+		outline: none
+		box-shadow: none
+		-webkit-appearance: none
+
+	&::placeholder
+		color: rgba($text, .3)
+		line-height: 50px
+
+input
+	line-height: 40px
+	height: 40px
+
+textarea
+	resize: none
+	padding-top: 10px
+	line-height: 1.4
+
+	&::placeholder
+		line-height: 1.4
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button 
+	-webkit-appearance: none
+	margin: 0
+
+
+input[type="number"]
+	-moz-appearance: textfield
+
+input[type="number"]:hover,
+input[type="number"]:focus
+	-moz-appearance: number-input
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+	-webkit-appearance: none
+	margin: 0
+
+
+

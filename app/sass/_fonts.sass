@@ -1,0 +1,45 @@
+// font-weight helper:
+// 100 Extra Light or Ultra Light;
+// 200 Light or Thin; 300 Book or Demi;
+// 400 Regular or Normal;
+// 500 Medium;
+// 600 Semibold or Demibold;
+// 700 Bold;
+// 800 Black or Extra Bold or Heavy;
+// 900 Extra Black or Fat or Ultra Black
+
+
+@mixin font($f-name, $f-style, $f-weight, $f-url)
+	@font-face
+		font-family: $f-name
+		font-style: $f-style
+		font-weight: $f-weight
+		src: url($f-url) format('woff2')
+		font-display: swap
+
+@include font('Nunito', normal, 900, '../fonts/Nunito-Black.woff2')
+@include font('Nunito', italic, 900, '../fonts/Nunito-BlackItalic.woff2')
+
+@include font('Nunito', normal, 800, '../fonts/Nunito-ExtraBold.woff2')
+@include font('Nunito', italic, 800, '../fonts/Nunito-ExtraBoldItalic.woff2')
+
+@include font('Nunito', normal, 700, '../fonts/Nunito-Bold.woff2')
+@include font('Nunito', italic, 700, '../fonts/Nunito-ExtraBoldItalic.woff2')
+
+@include font('Nunito', normal, 600, '../fonts/Nunito-SemiBold.woff2')
+@include font('Nunito', italic, 600, '../fonts/Nunito-SemiBoldItalic.woff2')
+
+@include font('Nunito', normal, 400, '../fonts/Nunito-Regular.woff2')
+@include font('Nunito', italic, 400, '../fonts/Nunito-Italic.woff2')
+
+@include font('Roboto', normal, 300, '../fonts/Nunito-Light.woff2')
+@include font('Roboto', italic, 300, '../fonts/Nunito-LightItalic.woff2')
+
+
+
+@include font('Oswald', normal, 700, '../fonts/Oswald-Bold.woff2')
+@include font('Oswald', normal, 600, '../fonts/Oswald-SemiBold.woff2')
+@include font('Oswald', normal, 500, '../fonts/Oswald-Medium.woff2')
+@include font('Oswald', normal, 400, '../fonts/Oswald-Regular.woff2')
+@include font('Oswald', normal, 300, '../fonts/Oswald-Light.woff2')
+@include font('Oswald', normal, 200, '../fonts/Oswald-ExtraLight.woff2')

@@ -1,0 +1,130 @@
+@import "libs"
+@import "base"
+
+
+.header
+	position: fixed
+	top: 0
+	right: 0
+	left: 0
+	padding: 30px 0 15px
+	transition: all .6s
+	z-index: 1000
+
+	&--active,
+	&--menu
+		background-color: #fff
+		padding: 15px 0
+		box-shadow: 0 0 5px 0 rgba(#000, .15)
+
+	&__container
+		position: relative
+		display: flex
+		justify-content: space-between
+
+	&__logo
+		width: 200px
+
+		img
+			width: 200px
+			transition: all .6s
+
+	&__nav
+		ul
+			display: flex
+			padding-top: 10px
+			transition: all .6s
+
+		li
+			margin-right: 15px
+			
+			letter-spacing: 0.5px
+
+			&:last-child
+				margin-right: 30px
+
+		a
+			display: flex
+			align-items: center
+			justify-content: center
+			height: 32px
+			padding: 0 10px
+			font-size: 12px
+			line-height: 1
+			text-transform: uppercase
+			opacity: 0.8
+			font-weight: 600
+
+			&:hover,
+			&:focus
+				background-color: $accent--hover
+				color: #fff
+
+				g, path, svg
+					fill: #fff
+					opacity: 1
+
+		svg, path
+			margin-left: 10px
+			width: 11px
+			fill: #1D2025
+
+		g
+			fill: #1D2025
+			opacity: .4
+
+		span
+			display: block
+			position: relative
+			margin: 0 25px
+
+			&::before
+				content: ''
+				position: absolute
+				width: 2px
+				height: 50px
+				background-color: $accent
+				transform: translate(0, -20%) rotate(45deg)
+
+
+
+.hero
+	background-image: url(../img/hero.jpg)
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+	padding: 
+		top: 320px
+		bottom: 225px
+
+	&__content
+		width: 500px
+
+	&__sub-title
+		
+		text-transform: uppercase
+		letter-spacing: .5px
+		margin-bottom: 15px
+
+	h1
+		font-size: 56px
+		margin-bottom: 30px
+
+	&__text
+		font-size: 20px
+		line-height: 1.4
+		margin-bottom: 45px
+
+	&__decor
+		position: absolute
+		left: 50%
+		top: 63%
+		z-index: 998
+
+
+.footer
+	padding: 35px
+
+
+	
+@import "media" // Always at the end

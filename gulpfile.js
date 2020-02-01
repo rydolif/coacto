@@ -43,6 +43,7 @@ gulp.task('minjs', function() {
 		'app/libs/jquery.validate.js',  			//----jquery
 		'app/libs/jquery.mask.min.js',  			//----jquery
 		'app/libs/swiper/swiper.min.js',  			//----jquery
+		'app/libs/fancybox/jquery.fancybox.js',  			//----jquery
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(plumber())

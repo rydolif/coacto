@@ -1,16 +1,156 @@
-@media only screen and (max-width : 1250px)
+@media only screen and (max-width : 1440px)
 	body
-		font-size: 14px
-
-	h1
-		font-size: 36px
-		margin-right: 40px
+		font-size: 16px
 
 	h2
-		font-size: 30px
+		margin-left: 0 !important
+
+	.container
+		max-width: 1200px
+
+	.hero
+		padding: 
+			top: 200px
+			bottom: 100px
+
+	.benefits
+		&__number
+			margin-bottom: 40px
+			padding: 40px
+
+		&__list_item
+			margin-bottom: 25px
+
+	.map
+		padding: 60px 0
+
+		&__content
+			margin-right: 0
+
+	.work
+		ul
+			margin-left: 0
+
+		&__container
+			padding:
+				top: 80px
+				bottom: 180px
+	
+	.faq
+		padding-bottom: 100px
+
+		&__content
+			width: 78%
+
+		&__block
+			padding: 30px 0 30px 30px
+
+	.video
+		padding: 40px 0
+
+		&__sub-title
+			margin-bottom: 35px
+
+		&__wrap a
+			left: 26.2%
+
+	.reviews
+		&__container
+			padding: 
+				top: 130px
+				bottom: 60px
+
+		h3
+			margin-bottom: 20px
+
+		&__slide
+			padding: 40px 80px
+
+	.partners h2
+		margin-bottom: 35px
+
+	.registration
+		padding-bottom: 100px
+
+		h2
+			margin-bottom: 50px
+
+		&__step
+			margin-bottom: 50px
+
+		&__form_line p
+			padding: 5px
+	
+	.quaetion
+		padding: 50px 0
+
+
+@media only screen and (max-width : 1200px)
+
+	h1
+		font-size: 56px
+
+	h2
+		font-size: 30px !important
 
 	.container
 		max-width: 992px
+
+	.hero
+		p
+			margin-bottom: 20px
+			font-size: 20px
+
+	.benefits__list
+		width: 70%
+
+	.map
+		&__content
+			width: 70%
+
+		&__title
+			font-size: 20px
+
+			br
+				display: none
+
+		ul
+			margin-bottom: 30px
+
+	.video
+		padding: 55px 0
+
+		&__wrap a
+			left: 21.2%
+
+	.work
+
+		li
+			font-size: 20px
+
+		&__price
+			margin-left: 0
+	
+	.faq__block_content
+		padding:
+			left: 20px
+			top: 20px
+	
+	.reviews__slide
+		padding: 40px
+
+
+	.partners__container
+		padding: 
+			top: 40px
+			bottom: 40px
+
+	.registration
+		padding-bottom: 50px
+
+	.footer__logo
+		span
+			display: none
 
 
 @media only screen and (max-width : 992px)
@@ -19,78 +159,346 @@
 
 	h2
 		margin-bottom: 30px
+		margin: 0 auto 15px !important
+		text-align: center
+
 		br
 			display: none
 
 	.container
 		max-width: 767px
 
-	.header
-		padding: 15px 0
+	.header__logo
+		margin-left: 0
+
+	.hero
+		padding-top: 130px
+		padding-bottom: 80px
+		background-position: left
+
+		&__content
+			width: 100%
+			margin-left: 0
+
+	.benefits
+		&__number
+			padding: 20px
+			font-size: 18px
+			order: 1
+			margin-bottom: 25px
+
+		&__list
+			width: 100%
+			order: 3
+
+		h2
+			margin: 0 auto 15px !important
+			text-align: center
+			order: 2
+
+	.map__content
+		width: 100%
+
+	.work
 
 		&__container
-			padding-right: 70px
-			align-items: center
+			padding:
+				top: 50px
+				bottom: 50px
 
-		&__logo
-			width: 120px
-			z-index: 1002
-
-			img
-			 	width: 120px
-		&__nav
-			position: fixed
-			top: -130%
-			left: 0
-			right: 0
-			background-color: #fff
-			z-index: 1001
-			height: 100%
+		ul
 			width: 100%
-			transition: all .6s
-			padding: 70px
+			order: 2
 
-			ul
-				flex-direction: column
+		li
+			margin-bottom: 15px
+			display: flex
+			align-items: center
+			justify-content: center
+			flex-wrap: wrap
+			padding-left: 0
+			text-align: center
 
-			li
-				margin-right: 0
-				margin-bottom: 20px
+			&::before
+				position: relative
+				transform: translate(0, 0)
+				margin-right: 10px
 
-				&:last-child
-					margin-right: 0
+		&__content
+			order: 1
+			width: 100%
+			margin: 0 auto 25px
+			text-align: center
 
-			span
+		.btn
+			margin: 0 auto
+	
+	.faq
+		padding-bottom: 50px
+
+		h2
+			width: 100%
+			text-align: center
+
+		&__content
+			width: 100%
+			margin-top: 0
+
+	.video
+		&__wrap
+			width: 100%
+			margin-bottom: 25px
+			height: auto
+			
+
+			&_bg
 				display: none
 
-			&--active
-				top: 73px
+			a
+				position: relative
+				left: 50%
+				top: 0
+				transform: translate(-50%, 0)
+				display: block
+				text-align: center
+				height: auto
 
-		&__info
-			padding-top: 0
-			align-items: center
-			z-index: 1002
+			img
+				max-width: 100%
 
-	.hamburger
-		display: block
+		&__content
+			width: 100%
+			text-align: center
+
+			.btn
+				margin: 0 auto 15px
+
+		&__sub-title
+			margin-bottom: 15px
+
+	.reviews
+		&__container
+			padding:
+				top: 50px
+
+	.registration
+		&__step
+			margin-bottom: 40px
+
+			a
+				padding: 15px
+
+
+		&__form
+			&_line
+				margin-bottom: 15px
+
+				input,
+				select,
+				div
+					max-width: 490px
+
+			&_check
+				margin-bottom: 30px
 
 
 @media only screen and (max-width : 767px)
 	.container
 		max-width: 576px
 
+	h1
+		font-size: 48px
+
 	h2
-		font-size: 28px
-		margin-bottom: 15px !important
+		font-size: 26px !important
 		line-height: 1.2
 
 	.btn
 		height: 40px
+		font-size: 20px
+
+
+	input
+		height: 40px !important
+
+	.header__logo
+		span
+			display: none
+
+	.benefits__number
+		flex-wrap: wrap
+		justify-content: space-around
+
+		p
+			width: 45%
+			margin-bottom: 15px
+
+			br
+				display: none
+
+			&:last-child
+				margin-bottom: 0
+	
+	.map
+		padding: 40px 0
+		text-align: center
+
+		li
+			display: flex
+			justify-content: center
+			align-items: center
+			padding-left: 0
+
+			&::before
+				position: relative
+				margin-right: 10px
+				transform: translate(0, 0)
+
+		&__btn
+			justify-content: center
+
+	.faq__block
+		padding: 15px 0 15px 15px
+	
+	.reviews__slider
+		width: 100%
+
+	.registration
+		&__step
+			margin-bottom: 20px
+
+			a
+				display: flex
+				flex-direction: column
+
+		&__form
+			line-height: 1.4
+
+			&_line
+				label
+					width: 30%
+					margin-right: 3%
+
+				input,
+				select,
+				div
+					max-width: 65%
+
+				div
+					input
+						max-width: 100%
+			
+			&_check
+				padding-left: 33%
+
+				label
+					padding-left: 40px
+	
+			&_radio
+				margin-bottom: 30px
+
+				div
+					width: 65%
+
+				label
+					padding-left: 40px
+
+
+				span
+					width: 30%
+
+	.quaetion
+		&__btn
+			height: 40px
+			width: 40px
+
+		&__title
+			margin-bottom: 5px
+
+		&__content,
+		&__form
+			width: 48%
+
+	.footer
+		padding: 15px 0
+
+		&__container
+			flex-wrap: wrap
+			justify-content: space-around
+
+		&__logo,
+		&__price,
+		&__tel,
+		p
+			width: 100%
+			text-align: center
+			margin-bottom: 15px
+
+			&:last-child
+				margin-bottom: 0
+
+		&__policy
+			br
+				display: none
+
+		&__logo
+			justify-content: center
 
 
 @media only screen and (max-width : 576px)
+	body
+		font-size: 14px
+
 	.container
 		max-width: 100%
+
+	.hero
+		p
+			br
+				display: none
+
+
+	.benefits__list_item
+		padding-left: 45px
+
+		img
+			width: 30px
+	
+	.map__title
+		font-size: 18px
+		line-height: 1.4
+
+	.work
+		br
+			display: none
+
+	.video
+		padding: 40px 0
+	
+	.quaetion
+		padding: 40px 0
+
+		&__content,
+		&__form
+			width: 100%
+			justify-content: center
+			text-align: center
+
+		&__content
+			margin-bottom: 15px
+
+	.registration
+		&__form_line 
+			input,
+			select
+				padding: 0 10px
+
+			p
+				width: 100%
+
+		&__step a
+			padding: 5px
+			font-size: 13px
 
 
 @media only screen and (max-width : 480px)
@@ -99,6 +507,122 @@
 
 	h2, h3
 		font-size: 18px
+
+	.header
+		&__logo
+			b
+				font-size: 24px
+
+			img
+				width: 40px
+				margin-right: 5px
+
+		&__tel
+			font-size: 18px
+
+	.hero
+		padding-top: 90px
+
+		p
+			font-size: 16px
+
+	.benefits
+		&__number
+			padding: 10px
+			font-size: 16px
+			align-items: flex-start
+
+			b
+				font-size: 28px
+
+		&__list_item
+			width: 100%
+			margin-bottom: 15px
+
+			&:last-child
+				margin-bottom: 0
+
+			br
+				display: none
+
+			img
+				top: 50%
+				transform: translate(0, -50%)
+
+	.map
+		&__title
+			font-size: 16px
+
+		&__btn .btn
+			margin-right: auto
+
+		li::before
+			display: none
+
+	.work
+		&__container
+			padding: 
+				top: 40px
+				bottom: 40px
+
+		li
+			font-size: 18px
+
+
+	.faq
+		padding-bottom: 40px
+
+		&__block
+			&_header,
+			&_content
+				padding-right: 50px
+
+			&_content
+				padding-left: 0
+	
+	.video__sub-title
+		font-size: 20px
+
+	.reviews
+		&__container
+			padding-top: 40px
+
+		&__slide
+			padding: 15px
+
+	.registration
+		&__step
+			li
+				width: 100%
+
+		&__form
+			&_line
+				div,
+				input,
+				select,
+				label
+					max-width: 100%
+					width: 100%
+
+				label
+					width: 100%
+					margin-top: 0
+					margin-bottom: 0
+
+			&_check
+				padding-left: 0
+
+			&_radio
+				span, label, div
+					width: 100%
+
+				label
+					&::before
+						top: 0
+
+					&::after
+						top: 6px
+
 
 
 

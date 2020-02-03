@@ -122,6 +122,10 @@ $(function() {
         el: '.reviews__pagination',
         clickable: true,
       },
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
     });
 
 //-------------------------partners slider---------------------------------------
@@ -145,7 +149,11 @@ $(function() {
         576: {
           slidesPerView: 1,
         }
-      }
+      },
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
     });
 
 });
